@@ -1,0 +1,39 @@
+.categorias-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+  padding: 2rem 0;
+}
+
+.categoria-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.categoria-card:hover {
+  transform: translateY(-4px);
+}
+
+.categoria-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.ver-nominados {
+  background: #111;
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 0.6rem;
+  display: block;
+  text-transform: uppercase;
+  font-weight: 600;
+  white-space: nowrap;
+}
